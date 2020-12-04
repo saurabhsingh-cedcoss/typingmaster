@@ -16,34 +16,37 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+
+    <!-- *************************external csss********************************* -->
+    <link rel="stylesheet" href="style.css">
+
     <title>typing</title>
-   
+
 </head>
 
 <body>
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center red img">
         <h1>
-
             welcome to typing master
         </h1>
-        <p class="text-center">
-            instructions: you have to enter the exact text given in below paragraph including spaces in the textarea given below the paragraph.your time will start as soon as you enter the input box.best of luck
+        <p class="text-center black ">
+            instructions: you have to enter the exact text given in below paragraph including spaces in the textarea
+            given below the paragraph.your time will start as soon as you enter the input box.best of luck
         </p>
-
     </div>
 
-    <div class="container text-center bg-success p-3" id="container1">
+    <div class="container text-center bg-primary p-3 box" id="container1">
         <div class="form-group">
             <label for="comment">type this</label>
-            <textarea class="form-control" rows="5" id="comment" name="text" disabled>this is your typing test</textarea>
-          </div>
-        <!-- <textarea name="txt" id="txt" cols="30" rows="7">this is your typing test
-        </textarea> -->
-
-
+            <textarea class="form-control size" rows="5" id="comment" name="text"
+                disabled>javaScript is the worlds most popular programming language JavaScript is the programming language of the Web.JavaScript is easy to learn.This tutorial will teach you JavaScript from basic to advanced.</textarea>
+        </div>
     </div>
-    <div class="container text-center" >
+
+    <div class="container text-center box msgbox">
         <div id="msg" class="my-3">
 
         </div>
@@ -53,20 +56,25 @@
         <div id="err" class="my-3">
 
         </div>
-        <button type="button" class="btn btn-larger text-center" id="but" onClick="window.location.reload()">reset</button>
-        <!-- <button id="but" onClick="window.location.reload()">reset</button> -->
+        <button type="button" class="btn btn-larger bg-dark text-center" id="but"
+            onClick="window.location.reload()">reset</button>
     </div>
-    <div class="container text-center">
-        <p id="p">timer: 0</p>
+
+    <div class="container text-center  bg-primary box">
+        <span id="time">time = </span>
+        <span class="min">0 </span>:
+        <span id="p">0</span>
         <p id="error"></p>
         <div class="form-group">
-
-            <textarea class="form-control" onkeyup="check()" onfocus="start()" id="inp" rows="5" 
-            placeholder=" this is your typing test"></textarea>
+            <textarea class="form-control size " onkeyup="check()" onfocus="start()" id="inp" rows="5"
+                placeholder="javaScript is the worlds most popular programming language JavaScript is the programming language of the Web.JavaScript is easy to learn.This tutorial will teach you JavaScript from basic to advanced."></textarea>
         </div>
 
     </div>
+    <!-- *************************external js********************************* -->
+        <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
+
 
 </html>
