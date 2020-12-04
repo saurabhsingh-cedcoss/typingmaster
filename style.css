@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(199, 164, 164);
+}
+* {
+    box-sizing: border-box;
+}
+
+/* h1 {
+    color: rgb(218, 159, 159);
+    width: 100vw;
+    margin: auto;
+    height: 8vw;
+    text-align: center;
+    font-size: 12vh;
+    background-color: black;
+} */
+
+/* .container1 {
+    width: 80vw;
+    height: 10vw;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(141, 161, 248);
+} */
+
+.container2 {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(141, 161, 248);
+}
+
+p {
+    font-size: 40px;
+}
+
+#msg,#err,#acc {
+    /* background-color: white;
+    color: black; */
+    font-size: 30px;
+}
+
+#but {
+    display: none;
+    font-size: 30px;
+    /* background-color: black;
+    color: white;
+    width: 100px;
+    height: 40px; */
+    border-radius: 20px;
+    margin: auto;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
